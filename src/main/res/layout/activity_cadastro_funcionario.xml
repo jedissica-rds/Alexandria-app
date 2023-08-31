@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroFuncionarioActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activity_cadastro_cardview_foto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="75dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/activity_cadastro_imageView_foto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/baseline_person_24"/>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/activity_cadastro_editText_codigo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Código:"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_cadastro_cardview_foto" />
+
+    <EditText
+        android:id="@+id/activity_cadastro_editText_nome"
+        android:layout_width="300dp"
+        android:layout_margin="32dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Nome:"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/activity_cadastro_editText_codigo"
+        app:layout_constraintStart_toStartOf="@+id/activity_cadastro_editText_codigo"
+        app:layout_constraintTop_toBottomOf="@+id/activity_cadastro_editText_codigo" />
+
+    <EditText
+        android:id="@+id/activity_cadastro_editText_cargo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Cargo:"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/activity_cadastro_editText_nome"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/activity_cadastro_editText_nome"
+        app:layout_constraintTop_toBottomOf="@+id/activity_cadastro_editText_nome" />
+
+    <EditText
+        android:id="@+id/activity_cadastro_editText_salario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Salário:"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/activity_cadastro_editText_cargo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/activity_cadastro_editText_cargo"
+        app:layout_constraintTop_toBottomOf="@+id/activity_cadastro_editText_cargo" />
+
+
+    <EditText
+        android:id="@+id/activity_cadastro_editText_data"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:inputType="date"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Data de Nascimento:"
+        app:layout_constraintEnd_toEndOf="@+id/activity_cadastro_editText_salario"
+        app:layout_constraintStart_toStartOf="@+id/activity_cadastro_editText_salario"
+        app:layout_constraintTop_toBottomOf="@+id/activity_cadastro_editText_salario" />
+
+    <Button
+        android:id="@+id/activity_cadastro_button_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:padding="12dp"
+        android:text="Cadastrar"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
